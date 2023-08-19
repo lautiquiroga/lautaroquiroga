@@ -25,23 +25,6 @@ export default function Home() {
       });
     }
 
-    /*===== Boton Menu =====*/
-    /* const btn = document.getElementById("button");
-
-    btn.addEventListener("click", function () {
-      if (this.classList.contains("active")) {
-        this.classList.remove("active");
-        this.classList.add("not-active");
-        document.querySelector(".nav_menu").classList.remove("active");
-        document.querySelector(".nav_menu").classList.add("not-active");
-      } else {
-        this.classList.add("active");
-        this.classList.remove("not-active");
-        document.querySelector(".nav_menu").classList.remove("not-active");
-        document.querySelector(".nav_menu").classList.add("active");
-      }
-    }); */
-
     /*===== class active por secciones =====*/
     const sectionAll = document.querySelectorAll("section[id]");
 
