@@ -2,10 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import iconoImage from "../multimedia/iconoMenu.png";
 import iconoImageCerrado from "../multimedia/iconoMenuCerrado.png";
 import iconoWpp from "../multimedia/icon-wpp.png";
-import iconoIg from "../multimedia/icon-instagram.png";
 import iconoLd from "../multimedia/icon-linkedin.png";
-import ayuda from "../multimedia/ayuda.png";
-import home from "../multimedia/home.png";
 
 export default function ButtonExt({ pagina }) {
   const [menuOpen, setMenuOpen] = useState(false);

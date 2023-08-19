@@ -6,7 +6,6 @@ import Footer from "./Footer";
 import ButtonExt from "./ButtonExt";
 import Inicio from "./Inicio";
 import Proyectos from "./Proyectos";
-import Planes from "./Planes";
 import Contacto from "./Contacto";
 
 export default function Home() {

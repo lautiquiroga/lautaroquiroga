@@ -3,7 +3,7 @@ import Spline from "@splinetool/react-spline";
 import camisa from "../multimedia/foto-camisa.jpeg";
 import html from "../multimedia/logo-html.png";
 import css from "../multimedia/icon-css.png";
-import scss from "../multimedia/sass-sq.svg";
+// import scss from "../multimedia/sass-sq.svg";
 import js from "../multimedia/icon-js.png";
 import react from "../multimedia/icon-React.png";
 import git from "../multimedia/icon-git.png";
@@ -80,7 +80,10 @@ export default function Nosotros() {
           </div>
 
           <div className="cardTecno">
-            <img className="logoTecno scss" src={scss} alt="Logo - SCSS" />
+            <img
+              className="logoTecno scss"
+              /* src={scss} */ alt="Logo - SCSS"
+            />
             <div className="">
               <p>SCSS</p>
             </div>
