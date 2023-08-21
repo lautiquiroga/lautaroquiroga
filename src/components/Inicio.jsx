@@ -3,10 +3,11 @@ import Spline from "@splinetool/react-spline";
 import camisa from "../multimedia/foto-camisa.jpeg";
 import html from "../multimedia/logo-html.png";
 import css from "../multimedia/icon-css.png";
-// import scss from "../multimedia/sass-sq.svg";
+import sass from "../multimedia/sass.png";
 import js from "../multimedia/icon-js.png";
 import react from "../multimedia/icon-React.png";
 import git from "../multimedia/icon-git.png";
+import wordpress from "../multimedia/wordpress.png";
 
 export default function Nosotros() {
   return (
@@ -28,6 +29,13 @@ export default function Nosotros() {
           <a className="button-inicio" href="#proyectos">
             PROYECTOS
           </a>
+          <a
+            className="button-inicio cv"
+            href="https://drive.google.com/file/d/1s4_WQpagqBGyLTk0qofJtnNSA-kGeHog/view?usp=drive_link"
+            target="_blank"
+          >
+            CURRÍCULUM
+          </a>
         </div>
         <div className="fotoContainer">
           <div>
@@ -47,22 +55,31 @@ export default function Nosotros() {
             Cuento con más de un año de experiencia en el desarrollo de páginas
             web. Mis habilidades en FrontEnd abarcan HTML5, CSS3, SCSS,
             JavaScript y React para el desarrollo de interfaces interactivas.
-            También cuento con conocimientos en el lado del Backend, utilizando
-            PostgreSQL con Sequelize como base de datos y Express para Node.js.{" "}
+            {/* También cuento con conocimientos en el lado del Backend, utilizando
+            PostgreSQL con Sequelize como base de datos y Express para Node.js. */}
             <br />
             <br />
-            Participé activamente en proyectos de desarrollo de páginas web
-            utilizando React y SCSS, lo que me permitió adquirir experiencia
-            práctica y mejorar mis habilidades técnicas. Estoy comprometido con
-            seguir creciendo en el mundo de la programación web y ansío
-            enfrentar nuevos desafíos para seguir perfeccionándome.
+            Invierto compromiso y esfuerzo en cada proyecto que abordo, siendo
+            el Menú Virtual la aplicación web más extensa que he construido y de
+            la cual he aprendido mucho. Dicho proyecto se caracteriza por un
+            análisis detallado de las diversas funcionalidades, cuidando cada
+            aspecto. También he dedicado tiempo a realizar pruebas exhaustivas
+            para garantizar una experiencia de usuario libre de errores.
+            <br />
+            <br />
+            Poseo la habilidad de plasmar el diseño creado por diseñadores UX/UI
+            en código funcional y estético. Formo parte de un equipo de trabajo
+            de desarrollo web, colaborando con otro programador (utilizamos Git
+            para trabajo colaborativo y control de versiones), y dos
+            diseñadores. Esta experiencia me ha proporcionado habilidades
+            sólidas de trabajo en equipo, comunicación y liderazgo.
           </p>
         </div>
       </section>
 
       {/* Tecnologías */}
       <section id="tecnologias" className="tecnologias">
-        <h1 className="titulo-tecno">Tecnologías dominadas</h1>
+        <h1 className="titulo-tecno">Tecnologías aprendidas</h1>
 
         <div className="cardsTecno">
           <div className="cardTecno">
@@ -80,10 +97,7 @@ export default function Nosotros() {
           </div>
 
           <div className="cardTecno">
-            <img
-              className="logoTecno scss"
-              /* src={scss} */ alt="Logo - SCSS"
-            />
+            <img className="logoTecno scss" src={sass} alt="Logo - SCSS" />
             <div className="">
               <p>SCSS</p>
             </div>
@@ -107,6 +121,17 @@ export default function Nosotros() {
             <img className="logoTecno git" src={git} alt="Logo - Git" />
             <div className="">
               <p>Git</p>
+            </div>
+          </div>
+
+          <div className="cardTecno">
+            <img
+              className="logoTecno wordpress"
+              src={wordpress}
+              alt="Logo - WordPress"
+            />
+            <div className="">
+              <p>WordPress</p>
             </div>
           </div>
         </div>

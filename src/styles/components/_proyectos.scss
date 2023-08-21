@@ -5,7 +5,6 @@ $beaver: rgb(93, 111, 187);
 $black: #404258;
 $eerie-black: #141824;
 $jet: #131520;
-$descrSize: 1.2rem;
 $descrLineHeight: 1.6;
 
 /* Proyectos */
@@ -40,28 +39,30 @@ $descrLineHeight: 1.6;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 4%;
     .cards--proyectos {
       border-radius: 20px;
-      padding-bottom: 2rem;
       background-color: $eerie-black;
       max-width: 38rem;
       box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%),
         0 25px 10px -24px rgb(5 5 5 / 10%);
-      width: 20vw;
-      height: auto;
+      width: 35vw;
+      height: 42rem;
       display: flex;
       flex-direction: column;
-      margin-bottom: 6.5rem;
       z-index: 1;
       position: relative;
 
-      &.card_JuegoAhorcado {
-        margin-bottom: 4rem;
-      }
-
       &.card_portafolio {
         margin-bottom: 4rem;
-        border: 1px solid $eerie-black;
+        // border: 1px solid $eerie-black;
+      }
+      .video {
+        width: 35vw;
+        height: 19rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
       }
       .container_imgCard--proyectos {
         margin-bottom: 1rem;
@@ -70,16 +71,15 @@ $descrLineHeight: 1.6;
         img {
           width: 100%;
           border-radius: 20px 20px 0 0;
-          margin-bottom: 1rem;
+          height: 19rem;
         }
       }
       .container_textCard--proyectos {
         padding: 0 2rem;
-        margin-bottom: 3rem;
 
         h2 {
           letter-spacing: 0.1rem;
-          font-size: 2rem;
+          font-size: 1.5vw;
           color: $white;
           display: inline;
         }
@@ -94,7 +94,7 @@ $descrLineHeight: 1.6;
       }
       .container_btn--proyectos {
         position: absolute;
-        bottom: 2rem;
+        bottom: 1.1rem;
         text-align: center;
         width: 100%;
 
@@ -102,57 +102,51 @@ $descrLineHeight: 1.6;
           text-decoration: none;
           display: inline-block;
           margin: 0 1.5rem;
-
           button {
             border-radius: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: auto;
+            width: 10vw;
             padding-left: 3.5rem;
             padding-right: 3.5rem;
             letter-spacing: 0.1rem;
             font-weight: 700;
             cursor: pointer;
+            padding: 0.5rem 0;
           }
 
-          &.btn_demo {
-            button {
-              padding: 0.8rem 0;
-              border: none;
-              background-color: rgb(44, 131, 189);
-              color: $eerie-black;
+          .btn_demo {
+            border: none;
+            background-color: rgb(44, 131, 189);
+            color: $eerie-black;
 
-              img {
-                width: 2rem;
-                margin-right: 0.8rem;
-              }
+            img {
+              width: 2rem;
+              margin-right: 0.8rem;
+            }
 
-              &:hover {
-                background: $black;
-                box-shadow: 0px 13px 33px -14px rgba(0, 0, 0, 0.75);
-                transition: all 0.4s ease;
-              }
+            &:hover {
+              background: $black;
+              box-shadow: 0px 13px 33px -14px rgba(0, 0, 0, 0.75);
+              transition: all 0.4s ease;
             }
           }
 
-          &.btn_repo {
-            button {
-              padding: 0.8rem 0;
-              background: none;
-              color: rgb(44, 131, 189);
-              border: 1px solid rgb(44, 131, 189);
+          .btn_repo {
+            background: none;
+            color: rgb(44, 131, 189);
+            border: 1px solid rgb(44, 131, 189);
 
-              img {
-                width: 2rem;
-                margin-right: 0.8rem;
-              }
+            img {
+              width: 2rem;
+              margin-right: 0.8rem;
+            }
 
-              &:hover {
-                background: $black;
-                box-shadow: 0px 13px 33px -14px rgba(0, 0, 0, 0.75);
-                transition: all 0.4s ease;
-              }
+            &:hover {
+              background: $black;
+              box-shadow: 0px 13px 33px -14px rgba(0, 0, 0, 0.75);
+              transition: all 0.4s ease;
             }
           }
         }

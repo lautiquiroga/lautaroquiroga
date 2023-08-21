@@ -19,7 +19,7 @@
     -ms-border-radius: 0 0 4rem 4rem;
     -o-border-radius: 0 0 4rem 4rem;
     .textoInicio {
-      width: 53vw;
+      width: 50vw;
       padding: 0 0 5% 5%;
       .hola {
         // font-size: 3rem;
@@ -49,6 +49,9 @@
         font-weight: 500;
         // font-size: 1.2rem;
         font-size: $descrSize;
+        &.cv {
+          margin-left: 2vw;
+        }
       }
       .button-inicio:hover {
         background-color: #1060eb;
@@ -73,15 +76,16 @@
     // background-color: rgba(26, 26, 26, 1);
     // background-color: $gris;
     background-color: transparent;
-    height: 80vh;
+    height: auto;
+
     position: relative;
     display: flex;
     flex-direction: row-reverse;
     .splineContainer {
       position: absolute;
       width: 100%;
-      top: -12%;
-      right: 25%;
+      top: -7%;
+      right: 24.5%;
     }
     .textSobremi {
       width: 50vw;
@@ -107,7 +111,7 @@
   .tecnologias {
     //background-color: #0e1015;
     height: auto;
-    padding: 5%;
+    padding: 5% 20%;
     @include centerCol;
     box-shadow: 0px 0px 0.8rem 0px rgb(44, 131, 189);
     border-radius: 4rem 4rem 4rem 4rem;
@@ -124,7 +128,7 @@
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
       .cardTecno {
         @include centerCol;
