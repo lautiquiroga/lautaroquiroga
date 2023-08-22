@@ -98,7 +98,7 @@ export default function Proyectos() {
           </div>
         </div>
 
-        <div className="cards--proyectos card_JuegoAhorcado">
+        {/* <div className="cards--proyectos card_JuegoAhorcado">
           <div className="container_imgCard--proyectos">
             <img src={citas} alt="Proyecto: Administrador" />
           </div>
@@ -140,7 +140,7 @@ export default function Proyectos() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="cards--proyectos card_JuegoAhorcado">
           {/* <div className="container_imgCard--proyectos">
