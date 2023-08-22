@@ -1,6 +1,7 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
-import camisa from "../multimedia/foto-camisa.jpeg";
+// import camisa from "../multimedia/foto-camisa.jpeg";
+import camisa from "../multimedia/camisa.png";
 import html from "../multimedia/logo-html.png";
 import css from "../multimedia/icon-css.png";
 import sass from "../multimedia/sass.png";
@@ -8,6 +9,8 @@ import js from "../multimedia/icon-js.png";
 import react from "../multimedia/icon-React.png";
 import git from "../multimedia/icon-git.png";
 import wordpress from "../multimedia/wordpress.png";
+import iconoWpp from "../multimedia/icon-wpp.png";
+import iconoLd from "../multimedia/icon-linkedin.png";
 
 export default function Nosotros() {
   return (
@@ -36,7 +39,24 @@ export default function Nosotros() {
           >
             CURRÍCULUM
           </a>
+          <a
+            className="circle"
+            href="https://wa.me/+543512780528"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={iconoWpp} alt="imgWpp" className="icono wsp" />
+          </a>
+          <a
+            className="circle"
+            href="https://www.linkedin.com/in/lautaro-quiroga/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={iconoLd} alt="linkedin" className="icono" />
+          </a>
         </div>
+
         <div className="fotoContainer">
           <div>
             <img className="camisa" src={camisa} alt="camisa" />
@@ -50,7 +70,7 @@ export default function Nosotros() {
           <Spline scene="https://prod.spline.design/Wapp5vLV15kWJDfr/scene.splinecode" />
         </div>
         <div className="textSobremi">
-          <h1 className="titulo-sobremi">Un poco más sobre mí</h1>
+          <h1 className="titulo-sobremi">Sobre mí</h1>
           <p className="descr-sobremi">
             Cuento con más de un año de experiencia en el desarrollo de páginas
             web. Mis habilidades en FrontEnd abarcan HTML5, CSS3, SCSS,
@@ -60,8 +80,8 @@ export default function Nosotros() {
             <br />
             <br />
             Invierto compromiso y esfuerzo en cada proyecto que abordo, siendo
-            el Menú Virtual la aplicación web más extensa que he construido y de
-            la cual he aprendido mucho. Dicho proyecto se caracteriza por un
+            el "Menú Virtual" la aplicación web más extensa que he construido y
+            de la cual he aprendido mucho. Dicho proyecto se caracteriza por un
             análisis detallado de las diversas funcionalidades, cuidando cada
             aspecto. También he dedicado tiempo a realizar pruebas exhaustivas
             para garantizar una experiencia de usuario libre de errores.

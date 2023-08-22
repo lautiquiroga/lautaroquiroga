@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useLocation } from "react-router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import ButtonExt from "./ButtonExt";
 import Inicio from "./Inicio";
 import Proyectos from "./Proyectos";
 import Contacto from "./Contacto";
@@ -59,7 +58,6 @@ export default function Home() {
       <Navbar />
       <div className="home-subContainer">
         <Inicio />
-        <ButtonExt pagina={pagina} />
         <Proyectos />
         {/* <Planes /> */}
         <Contacto />
