@@ -13,7 +13,6 @@ export default function Proyectos() {
       <h1 data-section="proyectos" data-value="title">
         Mis proyectos destacados
       </h1>
-      <h6 data-section="proyectos" data-value="title"></h6>
       <div className="cards_container--proyectos">
         <div className="cards--proyectos card_portafolio">
           {/* <div className="container_imgCard--proyectos">
@@ -38,7 +37,11 @@ export default function Proyectos() {
               </p>
             </div>
             <div className="container_btn--proyectos">
-              <a href="https:menuvirtual.vercel.app" target="_blank">
+              <a
+                href="https:menuvirtual.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="btn_demo">
                   <img src={demo} alt="Demostración" />
                   DEMO
@@ -67,13 +70,21 @@ export default function Proyectos() {
               </p>
             </div>
             <div className="container_btn--proyectos">
-              <a href="https://gopage.vercel.app/" target="_blank">
+              <a
+                href="https://gopage.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="btn_demo">
                   <img src={demo} alt="Demostración" />
                   DEMO
                 </button>
               </a>
-              <a href="https://github.com/dileo24/portafolioGP" target="_blank">
+              <a
+                href="https://github.com/dileo24/portafolioGP"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="btn_repo">
                   <img src={repo} alt="Repositorio de github" />
                   REPO
@@ -106,6 +117,7 @@ export default function Proyectos() {
               <a
                 href="https://lautiquiroga.github.io/Administrador-de-Pacientes/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="btn_demo">
                   <img src={demo} alt="Demostración" />
@@ -115,6 +127,7 @@ export default function Proyectos() {
               <a
                 href="https://github.com/lautiquiroga/Administrador-de-Pacientes/tree/gh-pages"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="btn_repo">
                   <img src={repo} alt="Repositorio de github" />
@@ -149,7 +162,7 @@ export default function Proyectos() {
             {/*  <div className="container_btn--proyectos">
             <a
               href="https://drive.google.com/file/d/1MDw3bRXxQ3FWe0P2sIkReMpSb3E8hmrY/view?usp=sharing"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <button className="btn_demo">
                 <img src={demo} alt="Demostración" />

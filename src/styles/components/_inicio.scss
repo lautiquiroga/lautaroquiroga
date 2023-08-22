@@ -1,13 +1,20 @@
-.nosotrosContainer {
+html::-webkit-scrollbar {
+  width: 0.8vw; /* Cambia el ancho del scrollbar vertical */
+  height: auto; /* Cambia el ancho del scrollbar horizontal */
+  background-color: #000000; /* Color del "pulgar" del scrollbar */
+}
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(44, 131, 189); /* Color del "pulgar" del scrollbar */
+  border-radius: 5px; /* Borde redondeado del pulgar */
+}
+
+.inicioPC {
   height: auto;
   color: black;
   .inicio {
     height: auto;
     padding-top: 4.8vw;
-    background-color: black;
-    background-color: rgb(9, 9, 9);
-    position: relative;
-    background-size: cover;
+    background-color: rgb(13, 13, 13);
     color: white;
     @include center;
     flex-wrap: wrap;
@@ -20,7 +27,7 @@
     -ms-border-radius: 0 0 4vw 4vw;
     -o-border-radius: 0 0 4vw 4vw;
     .textoInicio {
-      width: 50vw;
+      width: 51vw;
       padding: 0 0 7% 5%;
       .hola {
         font-size: $tituloSize;
@@ -38,6 +45,9 @@
         font-size: $descrSize;
         font-weight: 400;
         line-height: $descrLineHeight;
+        p {
+          margin: 0;
+        }
       }
       .button-inicio {
         //@includebotones:;
@@ -82,7 +92,7 @@
     .fotoContainer {
       display: flex;
       justify-content: center;
-      align-items: end;
+      align-items: flex-end;
       height: 100%;
       width: auto;
       padding-right: 6%;
@@ -109,7 +119,7 @@
     .textSobremi {
       width: 50vw;
       @include centerCol;
-      align-items: start;
+      align-items: flex-start;
       padding: 7%;
       padding-left: 2%;
       .titulo-sobremi {
@@ -205,12 +215,202 @@
   }
 }
 
-html::-webkit-scrollbar {
-  width: 0.8vw; /* Cambia el ancho del scrollbar vertical */
-  height: auto; /* Cambia el ancho del scrollbar horizontal */
-  background-color: #000000; /* Color del "pulgar" del scrollbar */
-}
-html::-webkit-scrollbar-thumb {
-  background-color: rgb(44, 131, 189); /* Color del "pulgar" del scrollbar */
-  border-radius: 5px; /* Borde redondeado del pulgar */
+// responsive
+
+.inicioMobile {
+  height: auto;
+  color: black;
+  .inicio {
+    height: auto;
+    padding-top: 3vw;
+    background-color: rgb(13, 13, 13);
+    color: white;
+    @include centerCol;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 0px 0.8rem 0px rgb(12, 30, 43);
+    border-radius: 0 0 8vw 8vw;
+    -webkit-border-radius: 0 0 8vw 8vw;
+    -moz-border-radius: 0 0 8vw 8vw;
+    -ms-border-radius: 0 0 8vw 8vw;
+    -o-border-radius: 0 0 8vw 8vw;
+    .textoInicio {
+      padding: 9%;
+      padding-bottom: 0;
+      .hola {
+        font-size: 8vw;
+        line-height: 1;
+        margin-bottom: 0;
+      }
+      .titulo-inicio {
+        margin-bottom: 3vh;
+        font-size: 10vw;
+        line-height: 1;
+        color: rgb(44, 131, 189);
+        letter-spacing: 0.6vw;
+      }
+      .descr-inicio {
+        font-size: $descrSizeResp;
+        font-weight: 400;
+        line-height: $descrLineHeight;
+        p {
+          margin: 0;
+        }
+      }
+      .btnsInicio {
+        margin: 4vh 0;
+        display: flex;
+        justify-content: space-between;
+        .button-inicio {
+          text-decoration: none;
+          transition: all 0.3s;
+          font-weight: $light;
+          background-color: rgb(44, 131, 189);
+          color: black;
+          font-weight: 500;
+          font-size: $descrSizeResp;
+          padding: 2vw;
+          text-align: center;
+          width: 38vw;
+          border-radius: 2vw;
+          -webkit-border-radius: 2vw;
+          -moz-border-radius: 2vw;
+          -ms-border-radius: 2vw;
+          -o-border-radius: 2vw;
+          //a:;
+          &.cv {
+            margin-left: 5vw;
+          }
+          &:hover {
+            background: #353c5c;
+            color: white;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+    .fotoContainer {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 100%;
+      width: auto;
+      padding-right: 6%;
+
+      .camisa {
+        height: 40vh;
+        width: auto;
+      }
+    }
+  }
+
+  .sobremi {
+    background-color: transparent;
+    height: auto;
+    position: relative;
+    .splineContainer {
+      position: absolute;
+      width: 120%;
+      bottom: 28.5%;
+      right: -8%;
+    }
+    .textSobremi {
+      @include centerCol;
+      align-items: flex-start;
+      padding: 9%;
+      .titulo-sobremi {
+        color: white;
+        margin-bottom: 5%;
+        font-size: $tituloSizeResp;
+        line-height: 1;
+      }
+      .descr-sobremi {
+        font-size: $descrSizeResp;
+        font-weight: 400;
+        line-height: $descrLineHeight;
+        color: white;
+        margin: 0;
+        .subDescr {
+          margin-top: 50vw;
+          // border: 1px solid red;
+        }
+      }
+    }
+  }
+
+  .tecnologias {
+    background-color: rgb(9, 9, 9);
+    height: auto;
+    padding: 7% 20%;
+    @include centerCol;
+    box-shadow: 0px 0px 0.8rem 0px rgb(12, 30, 43);
+    border-radius: 4vw 4vw 4vw 4vw;
+    -webkit-border-radius: 4vw 4vw 4vw 4vw;
+    -moz-border-radius: 4vw 4vw 4vw 4vw;
+    -ms-border-radius: 4vw 4vw 4vw 4vw;
+    -o-border-radius: 4vw 4vw 4vw 4vw;
+    .titulo-tecno {
+      color: rgb(44, 131, 189);
+      font-size: $tituloSizeResp;
+      line-height: 1;
+      margin-bottom: 5%;
+    }
+    .cardsTecno {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3vw;
+      .cardTecno {
+        @include centerCol;
+        justify-content: space-evenly;
+        width: 11vw;
+        height: 13vw;
+        //padding: 2rem 0;
+        background-color: #101725;
+        color: white;
+        border-radius: 1vw;
+        -webkit-border-radius: 1vw;
+        -moz-border-radius: 1vw;
+        -ms-border-radius: 1vw;
+        -o-border-radius: 1vw;
+        .logoTecno {
+          width: 6vw;
+          height: 6vw;
+        }
+        .html {
+          width: 6vw;
+          height: 6vw;
+        }
+        .css {
+          width: 7.5vw;
+          height: 7.5vw;
+          margin-top: -8%;
+        }
+
+        .js {
+          width: 7vw;
+          height: 7vw;
+          margin-top: -8%;
+        }
+        .scss {
+          width: 6.5vw;
+          height: 6.5vw;
+          margin-top: -5%;
+          filter: invert(100%);
+          -webkit-filter: invert(100%);
+        }
+        .react {
+          width: 7vw;
+          height: 6vw;
+        }
+        p {
+          font-size: 1.5vw;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+    }
+  }
 }

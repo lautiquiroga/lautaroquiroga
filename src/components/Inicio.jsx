@@ -13,48 +13,64 @@ import iconoWpp from "../multimedia/icon-wpp.png";
 import iconoLd from "../multimedia/icon-linkedin.png";
 
 export default function Nosotros() {
+  const vertical = window.innerHeight > window.innerWidth;
+
   return (
-    <div className="nosotrosContainer">
+    <div className={vertical ? "inicioMobile" : "inicioPC"}>
       {/* Inicio */}
       <section id="home" className="inicio">
         <div className="textoInicio">
           <p className="hola">Hola! Soy</p>
           <h1 className="titulo-inicio">Lautaro Quiroga</h1>
-          <p className="descr-inicio">
-            Soy programador web especializado en FrontEnd con conocimientos de
-            BackEnd y más de un año de experiencia en el desarrollo de páginas
-            web. Mi enfoque se centra en tecnologías como HTML5, CSS3, SCSS,
-            JavaScript y React para el FrontEnd. Estoy dispuesto a aprender las
-            tecnologías necesarias. Siempre me gustó el diseño y la lógica. Soy
-            detallista y me gusta dedicarle el tiempo que sea necesario a
-            resolver cualquier problema que se presente en el código.
-          </p>
-          <a className="button-inicio" href="#proyectos">
-            PROYECTOS
-          </a>
-          <a
-            className="button-inicio cv"
-            href="https://drive.google.com/file/d/1s4_WQpagqBGyLTk0qofJtnNSA-kGeHog/view?usp=drive_link"
-            target="_blank"
-          >
-            CURRÍCULUM
-          </a>
-          <a
-            className="circle"
-            href="https://wa.me/+543512780528"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={iconoWpp} alt="imgWpp" className="icono wsp" />
-          </a>
-          <a
-            className="circle"
-            href="https://www.linkedin.com/in/lautaro-quiroga/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={iconoLd} alt="linkedin" className="icono" />
-          </a>
+          <div className="descr-inicio">
+            <p>
+              Soy programador web especializado en FrontEnd, con conocimientos
+              de BackEnd y más de un año de experiencia en el desarrollo de
+              páginas web. Mi enfoque se centra en tecnologías como HTML5, CSS3,
+              SCSS, JavaScript y React. Estoy dispuesto a aprender las
+              tecnologías necesarias.
+            </p>
+            {!vertical && (
+              <p>
+                Siempre me interesó el diseño y la lógica. Soy detallista y me
+                gusta dedicarle el tiempo que sea necesario a resolver cualquier
+                problema que se presente en el código.
+              </p>
+            )}
+          </div>
+          <div className="btnsInicio">
+            <a className="button-inicio" href="#proyectos">
+              PROYECTOS
+            </a>
+            <a
+              className="button-inicio cv"
+              href="https://drive.google.com/file/d/1s4_WQpagqBGyLTk0qofJtnNSA-kGeHog/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              CURRÍCULUM
+            </a>
+            {!vertical && (
+              <>
+                <a
+                  className="circle"
+                  href="https://wa.me/+543512780528"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={iconoWpp} alt="imgWpp" className="icono wsp" />
+                </a>
+                <a
+                  className="circle"
+                  href="https://www.linkedin.com/in/lautaro-quiroga/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={iconoLd} alt="linkedin" className="icono" />
+                </a>
+              </>
+            )}
+          </div>
         </div>
 
         <div className="fotoContainer">
@@ -66,9 +82,12 @@ export default function Nosotros() {
 
       {/* Sobre mí */}
       <section id="sobreMi" className="sobremi">
+        {/* {!vertical && (  */}
         <div className="splineContainer">
           <Spline scene="https://prod.spline.design/Wapp5vLV15kWJDfr/scene.splinecode" />
         </div>
+        {/* )} */}
+
         <div className="textSobremi">
           <h1 className="titulo-sobremi">Sobre mí</h1>
           <p className="descr-sobremi">
@@ -83,16 +102,17 @@ export default function Nosotros() {
             el "Menú Virtual" la aplicación web más extensa que he construido y
             de la cual he aprendido mucho. Dicho proyecto se caracteriza por un
             análisis detallado de las diversas funcionalidades, cuidando cada
-            aspecto. También he dedicado tiempo a realizar pruebas exhaustivas
+            aspecto. También he dedicado tiempo a realizar pruebas minuciosas
             para garantizar una experiencia de usuario libre de errores.
-            <br />
-            <br />
-            Poseo la habilidad de plasmar el diseño creado por diseñadores UX/UI
-            en código funcional y estético. Formo parte de un equipo de trabajo
-            de desarrollo web, colaborando con otro programador (utilizamos Git
-            para trabajo colaborativo y control de versiones), y dos
-            diseñadores. Esta experiencia me ha proporcionado habilidades
-            sólidas de trabajo en equipo, comunicación y liderazgo.
+            <div className="subDescr">
+              Poseo la habilidad de plasmar el diseño creado por diseñadores
+              UX/UI en código funcional y estético. Formo parte de un equipo de
+              trabajo de desarrollo web, colaborando con otro programador
+              (utilizamos Git para trabajo colaborativo y control de versiones),
+              y dos diseñadores. Esta experiencia me ha proporcionado
+              habilidades sólidas de trabajo en equipo, comunicación y
+              liderazgo.
+            </div>
           </p>
         </div>
       </section>
