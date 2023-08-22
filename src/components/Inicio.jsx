@@ -94,6 +94,7 @@ export default function Nosotros() {
             Cuento con más de un año de experiencia en el desarrollo de páginas
             web. Mis habilidades en FrontEnd abarcan HTML5, CSS3, SCSS,
             JavaScript y React para el desarrollo de interfaces interactivas.
+            También tengo conocimientos de maquetación web con WordPress.
             {/* También cuento con conocimientos en el lado del Backend, utilizando
             PostgreSQL con Sequelize como base de datos y Express para Node.js. */}
             <br />
@@ -106,12 +107,12 @@ export default function Nosotros() {
             para garantizar una experiencia de usuario libre de errores.
             <div className="subDescr">
               Poseo la habilidad de plasmar el diseño creado por diseñadores
-              UX/UI en código funcional y estético. Formo parte de un equipo de
-              trabajo de desarrollo web, colaborando con otro programador
-              (utilizamos Git para trabajo colaborativo y control de versiones),
-              y dos diseñadores. Esta experiencia me ha proporcionado
-              habilidades sólidas de trabajo en equipo, comunicación y
-              liderazgo.
+              UX/UI en código funcional y estético. Adquirí esta habilidad
+              trabajando en un emprendemiento de desarrollo de páginas web,
+              colaborando con otro programador (utilizamos Git para trabajo
+              colaborativo y control de versiones), y dos diseñadores. Esta
+              experiencia me ha proporcionado habilidades sólidas de trabajo en
+              equipo, comunicación y liderazgo.
             </div>
           </p>
         </div>
