@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React /* , { useState, useEffect } */ from "react";
 import Spline from "@splinetool/react-spline";
 // import camisa from "../multimedia/foto-camisa.jpeg";
 import camisa from "../multimedia/camisa.png";

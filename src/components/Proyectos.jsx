@@ -2,7 +2,7 @@ import React from "react";
 import gopage from "../multimedia/gopage.png";
 import demo from "../multimedia/icon-demoProyecto.png";
 import repo from "../multimedia/icon-githubProyecto.png";
-import citas from "../multimedia/adm-citas.png";
+// import citas from "../multimedia/adm-citas.png";
 import wordpress from "../multimedia/wordpress.mp4";
 import quickbites from "../multimedia/quickbites2.mp4";
 
