@@ -93,30 +93,13 @@ export default function Inicio({
       </section>
       {/* Sobre mí */}
       <section id="sobreMi" className="sobremi">
-        {(sectionActualId === "sobreMi" ||
-          sectionActualId === "home" ||
-          sectionActualId === "tecnologias") &&
-          vertical && (
-            <div className="splineContainer">
-              <Spline scene="https://prod.spline.design/t-7bbc1CDmRvsGUC/scene.splinecode" />
-            </div>
-          )}
-        {/*  {(sectionActualId === "sobreMi" ||
-          sectionActualId === "home" ||
-          sectionActualId === "tecnologias") &&
-          vertical &&
-          splineLoading && (
-            <div className="container--loader2">
-              <div className="loader2"></div>
-            </div>
-          )} */}
-
         {!vertical && (
-          <div className="splineContainer">
-            <Spline scene="https://prod.spline.design/Dv5XC-zz0YXFi9t7/scene.splinecode" />
+          <div className="contenedorSpline">
+            <div className="splineContainer">
+              <Spline scene="https://prod.spline.design/IBwNdGw6wK5iS0Il/scene.splinecode" />
+            </div>
           </div>
         )}
-
         <div className="textSobremi">
           <h1 className="titulo-sobremi">Sobre mí</h1>
           <div className="descr-sobremi">
@@ -134,6 +117,16 @@ export default function Inicio({
             análisis detallado de las diversas funcionalidades, cuidando cada
             aspecto. También he dedicado tiempo a realizar pruebas minuciosas
             para garantizar una experiencia de usuario libre de errores.
+            {(sectionActualId === "sobreMi" ||
+              sectionActualId === "home" ||
+              sectionActualId === "tecnologias") &&
+              vertical && (
+                <div className="contenedorSpline">
+                  <div className="splineContainer">
+                    <Spline scene="https://prod.spline.design/IBwNdGw6wK5iS0Il/scene.splinecode" />
+                  </div>
+                </div>
+              )}
             <div className="subDescr">
               Poseo la habilidad de plasmar el diseño creado por diseñadores
               UX/UI en código funcional y estético. Adquirí esta habilidad
