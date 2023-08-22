@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React /* , { useEffect } */ from "react";
 // import logo from "../multimedia/logo2.PNG";
 
 export default function Navbar() {

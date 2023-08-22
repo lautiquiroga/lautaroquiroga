@@ -1,20 +1,21 @@
 import React from "react";
 
 export default function Footer() {
+  const vertical = window.innerHeight > window.innerWidth;
+
   return (
-    <div id="footer" className="footerContainer">
+    <div
+      id="footer"
+      className={vertical ? "footerContainerMobile" : "footerContainerPC"}
+    >
       <p className="p1">
-        <b>GoPage Desarrollo Web</b>
+        <b>Lautaro Quiroga</b>
       </p>
       <p className="p2">
         Ciudad de Córdoba. Córdoba - Argentina
         <br />
       </p>
-      <p className="p3">
-        Todos los derechos reservados.
-        <br />
-        @GoPageDesarrolloWeb
-      </p>
+      <p className="p3">Copyright © | Todos los derechos reservados.</p>
     </div>
   );
 }
