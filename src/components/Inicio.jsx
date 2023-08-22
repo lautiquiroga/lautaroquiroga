@@ -12,8 +12,16 @@ import wordpress from "../multimedia/wordpress.png";
 import iconoWpp from "../multimedia/icon-wpp.png";
 import iconoLd from "../multimedia/icon-linkedin.png";
 
-export default function Nosotros() {
+export default function Inicio({ sectionActualId }) {
   const vertical = window.innerHeight > window.innerWidth;
+  // console.log(sectionActualId);
+  // if (
+  //   sectionActualId === "sobreMi" ||
+  //   sectionActualId === "home" ||
+  //   sectionActualId === "tecnologias"
+  // ) {
+  //   console.log(true);
+  // }
 
   return (
     <div className={vertical ? "inicioMobile" : "inicioPC"}>
@@ -79,18 +87,25 @@ export default function Nosotros() {
           </div>
         </div>
       </section>
-
       {/* Sobre mí */}
       <section id="sobreMi" className="sobremi">
-        {/* {!vertical && (  */}
-        <div className="splineContainer">
-          <Spline scene="https://prod.spline.design/Wapp5vLV15kWJDfr/scene.splinecode" />
-        </div>
-        {/* )} */}
+        {(sectionActualId === "sobreMi" ||
+          sectionActualId === "home" ||
+          sectionActualId === "tecnologias") &&
+          vertical && (
+            <div className="splineContainer">
+              <Spline scene="https://prod.spline.design/Wapp5vLV15kWJDfr/scene.splinecode" />
+            </div>
+          )}
+        {!vertical && (
+          <div className="splineContainer">
+            <Spline scene="https://prod.spline.design/Wapp5vLV15kWJDfr/scene.splinecode" />
+          </div>
+        )}
 
         <div className="textSobremi">
           <h1 className="titulo-sobremi">Sobre mí</h1>
-          <p className="descr-sobremi">
+          <div className="descr-sobremi">
             Cuento con más de un año de experiencia en el desarrollo de páginas
             web. Mis habilidades en FrontEnd abarcan HTML5, CSS3, SCSS,
             JavaScript y React para el desarrollo de interfaces interactivas.
@@ -114,7 +129,7 @@ export default function Nosotros() {
               experiencia me ha proporcionado habilidades sólidas de trabajo en
               equipo, comunicación y liderazgo.
             </div>
-          </p>
+          </div>
         </div>
       </section>
 

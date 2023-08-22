@@ -6,22 +6,17 @@ $black: #404258;
 $eerie-black: #141824;
 $jet: #131520;
 
-/* Contacto */
-.contacto {
-  // background-color: black;
-  // background-color: rgb(25, 29, 42);
-  background-color: rgb(9, 9, 9);
-
+.contactoPC {
+  background-color: rgb(13, 13, 13);
   width: 100%;
   padding: 7% 25%;
   height: auto;
   box-shadow: 0px 0px 0.8rem 0px rgb(12, 30, 43);
-  border-radius: 4vw 4vw 4vw 4vw;
-  -webkit-border-radius: 4vw 4vw 4vw 4vw;
-  -moz-border-radius: 4vw 4vw 4vw 4vw;
-  -ms-border-radius: 4vw 4vw 4vw 4vw;
-  -o-border-radius: 4vw 4vw 4vw 4vw;
-  // a
+  border-radius: 4vw;
+  -webkit-border-radius: 4vw;
+  -moz-border-radius: 4vw;
+  -ms-border-radius: 4vw;
+  -o-border-radius: 4vw;
   h1 {
     display: block;
     text-align: center;
@@ -31,11 +26,6 @@ $jet: #131520;
     line-height: 1;
     margin-bottom: 2rem;
   }
-
-  .container_img--contacto {
-    display: none;
-  }
-
   .container--contacto {
     width: 100%;
     border-radius: 24px;
@@ -59,7 +49,6 @@ $jet: #131520;
       margin-top: 4%;
       background-color: rgb(195, 244, 204);
       color: green;
-      //border: 1px solid green;
       padding: 1vw 1.2vw;
       border-radius: 8px;
       -webkit-border-radius: 8px;
@@ -109,7 +98,7 @@ $jet: #131520;
         }
 
         &::-webkit-scrollbar-thumb {
-          background-color: $jet;
+          background-color: rgb(44, 131, 189);
         }
       }
 
@@ -128,6 +117,148 @@ $jet: #131520;
           -o-border-radius: 1vw;
           color: black;
           font-size: $descrSize;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: 1s all;
+          font-weight: 700;
+          &:hover {
+            background: #353c5c;
+            color: $white;
+            font-weight: 700;
+            transform: scale(1.1);
+            box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s ease;
+          }
+          &:active {
+            background: $jet;
+          }
+        }
+      }
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px $eerie-black inset !important;
+      -webkit-text-fill-color: $white !important;
+    }
+  }
+}
+
+//////////// Responsive ////////////
+
+.contactoMobile {
+  background-color: rgb(13, 13, 13);
+
+  width: 100%;
+  padding: 12% 8%;
+  height: auto;
+  box-shadow: 0px 0px 0.8rem 0px rgb(12, 30, 43);
+  border-radius: 8vw;
+  -webkit-border-radius: 8vw;
+  -moz-border-radius: 8vw;
+  -ms-border-radius: 8vw;
+  -o-border-radius: 8vw;
+  h1 {
+    display: block;
+    text-align: center;
+    color: rgb(44, 131, 189);
+    font-size: $tituloSizeResp;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+  .container--contacto {
+    width: 100%;
+    border-radius: 24px;
+    @include centerCol;
+    // padding: 3rem;
+    position: relative;
+    .circle {
+      opacity: 0.7;
+      transition: all 0.3s;
+      .icono {
+        height: 10vw;
+      }
+      .wsp {
+        margin: 0 5vw 0 0;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .alertaContainer {
+      margin-top: 10%;
+      background-color: rgb(195, 244, 204);
+      color: green;
+      padding: 2vw 4vw;
+      border-radius: 4vw;
+      -webkit-border-radius: 4vw;
+      -moz-border-radius: 4vw;
+      -ms-border-radius: 4vw;
+      -o-border-radius: 4vw;
+      p {
+        margin: 0;
+        font-size: $descrSizeResp;
+        font-weight: 500;
+      }
+    }
+
+    .form-contact {
+      margin-top: 10%;
+      input,
+      textarea {
+        margin-bottom: 5%;
+        background: transparent;
+        background-color: $eerie-black;
+        border: 1px solid $eerie-black;
+        width: 100%;
+        padding: 3vw;
+        border-radius: 4vw;
+        color: $white;
+        font-size: $descrSizeResp;
+        outline: none;
+        letter-spacing: 1px;
+        resize: none;
+        &::placeholder {
+          color: $light-grey;
+        }
+
+        &.input-invalid {
+          border: 1px solid $jet;
+          color: $jet;
+        }
+      }
+
+      textarea {
+        &::-webkit-scrollbar {
+          width: 4px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: $eerie-black;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $jet;
+          background-color: rgb(44, 131, 189);
+        }
+      }
+
+      .btn_form--contacto {
+        display: flex;
+        justify-content: center;
+
+        button {
+          background: rgb(44, 131, 189);
+          border: none;
+          padding: 0.8vw 5vw;
+          border-radius: 2vw;
+          -webkit-border-radius: 2vw;
+          -moz-border-radius: 2vw;
+          -ms-border-radius: 2vw;
+          -o-border-radius: 2vw;
+          color: black;
+          font-size: $descrSizeResp;
           letter-spacing: 1px;
           cursor: pointer;
           transition: 1s all;

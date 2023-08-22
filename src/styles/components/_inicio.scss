@@ -139,7 +139,7 @@ html::-webkit-scrollbar-thumb {
   }
 
   .tecnologias {
-    background-color: rgb(9, 9, 9);
+    background-color: rgb(13, 13, 13);
     height: auto;
     padding: 7% 20%;
     @include centerCol;
@@ -312,17 +312,17 @@ html::-webkit-scrollbar-thumb {
     .splineContainer {
       position: absolute;
       width: 120%;
-      bottom: 29%;
+      bottom: 29.5%;
       right: -8%;
     }
     .textSobremi {
       @include centerCol;
-      align-items: flex-start;
+      // align-items: flex-start;
       padding: 12% 8%;
 
       .titulo-sobremi {
         color: white;
-        margin-bottom: 5%;
+        margin-bottom: 8%;
         font-size: $tituloSizeResp;
         line-height: 1;
       }
@@ -341,7 +341,7 @@ html::-webkit-scrollbar-thumb {
   }
 
   .tecnologias {
-    background-color: rgb(9, 9, 9);
+    background-color: rgb(13, 13, 13);
     height: auto;
     padding: 12% 8%;
     @include centerCol;
@@ -355,7 +355,7 @@ html::-webkit-scrollbar-thumb {
       color: rgb(44, 131, 189);
       font-size: $tituloSizeResp;
       line-height: 1;
-      margin-bottom: 10%;
+      margin-bottom: 15%;
     }
     .cardsTecno {
       width: 100%;

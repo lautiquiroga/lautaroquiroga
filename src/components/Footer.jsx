@@ -1,8 +1,13 @@
 import React from "react";
 
 export default function Footer() {
+  const vertical = window.innerHeight > window.innerWidth;
+
   return (
-    <div id="footer" className="footerContainer">
+    <div
+      id="footer"
+      className={vertical ? "footerContainerMobile" : "footerContainerPC"}
+    >
       <p className="p1">
         <b>Lautaro Quiroga</b>
       </p>

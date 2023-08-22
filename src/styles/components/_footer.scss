@@ -1,4 +1,4 @@
-.footerContainer {
+.footerContainerPC {
   // background-color: rgb(150, 150, 150);
   color: white;
   padding: 3% 0;
@@ -18,16 +18,22 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .footerContainer {
-    .p1 {
-      font-size: 2.5vw;
-    }
-    .p2 {
-      font-size: 2vw;
-    }
-    .p3 {
-      font-size: 1.8vw;
-    }
+.footerContainerMobile {
+  // background-color: rgb(150, 150, 150);
+  color: rgb(0, 0, 0);
+  padding: 5% 0;
+  p {
+    @include centerCol;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .p1 {
+    font-size: $descrSizeResp;
+  }
+  .p2 {
+    font-size: 3vw;
+  }
+  .p3 {
+    font-size: 3vw;
   }
 }

@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import { useLocation } from "react-router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -9,6 +8,7 @@ import Contacto from "./Contacto";
 
 export default function Home() {
   const vertical = window.innerHeight > window.innerWidth;
+  const [sectionActualId, setSectionActualId] = useState(null);
 
   useEffect(() => {
     // Función que se ejecutará cuando cambie el tamaño del viewport
@@ -53,6 +53,7 @@ export default function Home() {
             "nav a[href*=" + sectionId + "]"
           );
           button && button.classList.add("active");
+          setSectionActualId(sectionId);
         } else {
           const button = document.querySelector(
             "nav a[href*=" + sectionId + "]"
@@ -69,7 +70,7 @@ export default function Home() {
     <div className={vertical ? "homeContainerMobile" : "homeContainerPC"}>
       <Navbar />
       <div className="home-subContainer">
-        <Inicio />
+        <Inicio sectionActualId={sectionActualId && sectionActualId} />
         <Proyectos />
         {/* <Planes /> */}
         <Contacto />

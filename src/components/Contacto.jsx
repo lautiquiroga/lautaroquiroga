@@ -3,6 +3,7 @@ import iconoWpp from "../multimedia/icon-wpp.png";
 import iconoLd from "../multimedia/icon-linkedin.png";
 
 export default function Contacto() {
+  const vertical = window.innerHeight > window.innerWidth;
   const [alerta, setAlerta] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -55,7 +56,10 @@ export default function Contacto() {
   };
 
   return (
-    <section className="contacto" id="contacto">
+    <section
+      className={vertical ? "contactoMobile" : "contactoPC"}
+      id="contacto"
+    >
       <h1 data-section="contacto" data-value="title">
         Contacto
       </h1>
