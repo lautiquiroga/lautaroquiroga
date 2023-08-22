@@ -8,9 +8,10 @@ import Contacto from "./Contacto";
 
 export default function Home() {
   const vertical = window.innerHeight > window.innerWidth;
-  const [sectionActualId, setSectionActualId] = useState(null);
-  const [splineLoading, setSplineLoading] = useState(true);
+  const [sectionActualId, setSectionActualId] = useState("home");
+  // const [splineLoading, setSplineLoading] = useState(true);
   // const [splineLoaded, setSplineLoaded] = useState(false);
+  console.log(sectionActualId);
 
   useEffect(() => {
     // Función que se ejecutará cuando cambie el tamaño del viewport
@@ -73,33 +74,33 @@ export default function Home() {
     });
   }, []);
 
-  useEffect(() => {
-    const handleLoad = () => {
-      const contenedorLoader = document.querySelector(".container--loader");
-      contenedorLoader.style.opacity = 0;
-      contenedorLoader.style.visibility = "hidden";
-    };
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     const contenedorLoader = document.querySelector(".container--loader");
+  //     contenedorLoader.style.opacity = 0;
+  //     contenedorLoader.style.visibility = "hidden";
+  //   };
 
-    // Agregar el evento 'load' durante el montaje
-    window.addEventListener("load", handleLoad);
+  //   // Agregar el evento 'load' durante el montaje
+  //   window.addEventListener("load", handleLoad);
 
-    // Retirar el evento durante la limpieza del efecto
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
+  //   // Retirar el evento durante la limpieza del efecto
+  //   return () => {
+  //     window.removeEventListener("load", handleLoad);
+  //   };
+  // }, []);
 
   return (
     <div className={vertical ? "homeContainerMobile" : "homeContainerPC"}>
-      <div class="container--loader">
+      {/* <div class="container--loader">
         <div class="loader"></div>
-      </div>
+      </div> */}
       <Navbar />
       <div className="home-subContainer">
         <Inicio
           sectionActualId={sectionActualId}
-          splineLoading={splineLoading}
-          setSplineLoading={setSplineLoading}
+          // splineLoading={splineLoading}
+          // setSplineLoading={setSplineLoading}
         />
         <Proyectos />
         {/* <Planes /> */}
