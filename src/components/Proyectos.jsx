@@ -3,7 +3,7 @@ import gopage from "../multimedia/gopage.png";
 import demo from "../multimedia/icon-demoProyecto.png";
 import repo from "../multimedia/icon-githubProyecto.png";
 import citas from "../multimedia/adm-citas.png";
-import menu from "../multimedia/quickbites.jpg";
+// import menu from "../multimedia/quickbites.jpg";
 import wordpress from "../multimedia/wordpress.mp4";
 import quickbites from "../multimedia/quickbites.mp4";
 
@@ -11,15 +11,11 @@ export default function Proyectos() {
   return (
     <section className="proyectos" id="proyectos">
       <h1 data-section="proyectos" data-value="title">
-        Proyectos
+        Mis proyectos destacados
       </h1>
       <h6 data-section="proyectos" data-value="title"></h6>
       <div className="cards_container--proyectos">
-        <div
-          className="cards--proyectos card_portafolio"
-          data-aos="zoom-in-up"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <div className="cards--proyectos card_portafolio">
           {/* <div className="container_imgCard--proyectos">
             <img src={menu} alt="Proyecto: gasto semanal" />
           </div> */}
@@ -27,7 +23,7 @@ export default function Proyectos() {
             <source src={quickbites} type="video/mp4" />
           </video>
           <div className="container_textCard--proyectos">
-            <div>
+            <div className="cardTexto">
               <h2 data-section="proyectos" data-value="title-proyecto2">
                 <b>QuickBites - Menú Virtual</b>
               </h2>
@@ -52,16 +48,12 @@ export default function Proyectos() {
           </div>
         </div>
 
-        <div
-          className="cards--proyectos card_portafolio"
-          data-aos="zoom-in-up"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <div className="cards--proyectos card_portafolio">
           <div className="container_imgCard--proyectos">
             <img src={gopage} alt="Proyecto: carrito" />
           </div>
           <div className="container_textCard--proyectos">
-            <div>
+            <div className="cardTexto">
               <h2 data-section="proyectos" data-value="title-proyecto2">
                 <b>Portafolio GoPage</b>
               </h2>
@@ -91,16 +83,12 @@ export default function Proyectos() {
           </div>
         </div>
 
-        <div
-          className="cards--proyectos card_JuegoAhorcado"
-          data-aos="zoom-in-up"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <div className="cards--proyectos card_JuegoAhorcado">
           <div className="container_imgCard--proyectos">
             <img src={citas} alt="Proyecto: Administrador" />
           </div>
           <div className="container_textCard--proyectos">
-            <div>
+            <div className="cardTexto">
               <h2 data-section="proyectos" data-value="title-proyecto1">
                 <b>Administrador de Pacientes</b>
               </h2>
@@ -137,11 +125,7 @@ export default function Proyectos() {
           </div>
         </div>
 
-        <div
-          className="cards--proyectos card_JuegoAhorcado"
-          data-aos="zoom-in-up"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <div className="cards--proyectos card_JuegoAhorcado">
           {/* <div className="container_imgCard--proyectos">
             <img src={citas} alt="Proyecto: Administrador" />
           </div> */}
@@ -150,7 +134,7 @@ export default function Proyectos() {
           </video>
 
           <div className="container_textCard--proyectos">
-            <div>
+            <div className="cardTexto">
               <h2 data-section="proyectos" data-value="title-proyecto1">
                 <b>Urbano Clothes - WooCommerce</b>
               </h2>

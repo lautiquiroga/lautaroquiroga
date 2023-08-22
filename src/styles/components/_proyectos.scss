@@ -46,9 +46,9 @@ $descrLineHeight: 1.6;
       background-color: $eerie-black;
       box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%),
         0 25px 10px -24px rgb(5 5 5 / 10%);
-      max-width: 38%;
-      min-height: 46vw;
-      max-height: 100%;
+      max-width: 35%;
+      // min-height: 40vw;
+      // max-height: 100%;
       display: flex;
       flex-direction: column;
       z-index: 1;
@@ -63,8 +63,8 @@ $descrLineHeight: 1.6;
       }
       .video {
         //width: 35vw;
-        max-width: 34vw;
-        max-height: 19vw;
+        // max-width: 34vw;
+        height: 18vw;
         //margin-bottom: 1vw;
         cursor: pointer;
         border-radius: 2vw 2vw 0 0;
@@ -87,7 +87,7 @@ $descrLineHeight: 1.6;
           -moz-border-radius: 2vw 2vw 0 0;
           -ms-border-radius: 2vw 2vw 0 0;
           -o-border-radius: 2vw 2vw 0 0;
-          max-height: 19vw;
+          height: 18vw;
         }
       }
       .container_textCard--proyectos {
@@ -97,20 +97,28 @@ $descrLineHeight: 1.6;
         align-items: start;
         justify-content: space-between;
         width: 100%;
-        min-height: 26vw;
-        h2 {
-          letter-spacing: 0.1vw;
-          font-size: 1.5vw;
-          color: $white;
-          display: inline;
+        height: 22vw;
+        .cardTexto {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          h2 {
+            letter-spacing: 0.1vw;
+            font-size: 1.5vw;
+            color: $white;
+            display: inline;
+            line-height: 1;
+          }
+          p {
+            color: $white;
+            font-size: 1vw;
+            font-weight: 400;
+            line-height: $descrLineHeight;
+            margin-top: 1vw;
+            margin-bottom: 0;
+          }
         }
-        p {
-          color: $white;
-          font-size: 1.15vw;
-          font-weight: 400;
-          line-height: $descrLineHeight;
-          margin-top: 1vw;
-        }
+
         .container_btn--proyectos {
           // position: absolute;
           // bottom: 1.1vw;

@@ -10,7 +10,7 @@ export default function Footer() {
         Ciudad de Córdoba. Córdoba - Argentina
         <br />
       </p>
-      {/* <p className="p3">Todos los derechos reservados.</p> */}
+      <p className="p3">Copyright © | Todos los derechos reservados.</p>
     </div>
   );
 }
