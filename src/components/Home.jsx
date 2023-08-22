@@ -9,6 +9,8 @@ import Contacto from "./Contacto";
 export default function Home() {
   const vertical = window.innerHeight > window.innerWidth;
   const [sectionActualId, setSectionActualId] = useState(null);
+  const [splineLoading, setSplineLoading] = useState(true);
+  // const [splineLoaded, setSplineLoaded] = useState(false);
 
   useEffect(() => {
     // Función que se ejecutará cuando cambie el tamaño del viewport
@@ -54,6 +56,13 @@ export default function Home() {
           );
           button && button.classList.add("active");
           setSectionActualId(sectionId);
+          /* if (
+            sectionId === "sobreMi" ||
+            sectionId === "home" ||
+            sectionId === "tecnologias"
+          ) {
+            setSplineLoading(true);
+          } */
         } else {
           const button = document.querySelector(
             "nav a[href*=" + sectionId + "]"
@@ -64,13 +73,34 @@ export default function Home() {
     });
   }, []);
 
-  // const pagina = useLocation().pathname;
+  useEffect(() => {
+    const handleLoad = () => {
+      const contenedorLoader = document.querySelector(".container--loader");
+      contenedorLoader.style.opacity = 0;
+      contenedorLoader.style.visibility = "hidden";
+    };
+
+    // Agregar el evento 'load' durante el montaje
+    window.addEventListener("load", handleLoad);
+
+    // Retirar el evento durante la limpieza del efecto
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
 
   return (
     <div className={vertical ? "homeContainerMobile" : "homeContainerPC"}>
+      <div class="container--loader">
+        <div class="loader"></div>
+      </div>
       <Navbar />
       <div className="home-subContainer">
-        <Inicio sectionActualId={sectionActualId && sectionActualId} />
+        <Inicio
+          sectionActualId={sectionActualId}
+          splineLoading={splineLoading}
+          setSplineLoading={setSplineLoading}
+        />
         <Proyectos />
         {/* <Planes /> */}
         <Contacto />

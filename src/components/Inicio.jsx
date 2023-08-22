@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
 // import camisa from "../multimedia/foto-camisa.jpeg";
 import camisa from "../multimedia/camisa.png";
@@ -12,16 +12,20 @@ import wordpress from "../multimedia/wordpress.png";
 import iconoWpp from "../multimedia/icon-wpp.png";
 import iconoLd from "../multimedia/icon-linkedin.png";
 
-export default function Inicio({ sectionActualId }) {
+export default function Inicio({
+  sectionActualId,
+  // splineLoading,
+  // setSplineLoading,
+}) {
   const vertical = window.innerHeight > window.innerWidth;
   // console.log(sectionActualId);
-  // if (
-  //   sectionActualId === "sobreMi" ||
-  //   sectionActualId === "home" ||
-  //   sectionActualId === "tecnologias"
-  // ) {
-  //   console.log(true);
-  // }
+
+  /*  useEffect(() => {
+    // Simulación de carga de Spline (esto es solo un ejemplo)
+    setTimeout(() => {
+      setSplineLoading(false);
+    }, 5000);
+  }, [splineLoading]); */
 
   return (
     <div className={vertical ? "inicioMobile" : "inicioPC"}>
@@ -94,12 +98,22 @@ export default function Inicio({ sectionActualId }) {
           sectionActualId === "tecnologias") &&
           vertical && (
             <div className="splineContainer">
-              <Spline scene="https://prod.spline.design/Wapp5vLV15kWJDfr/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/t-7bbc1CDmRvsGUC/scene.splinecode" />
             </div>
           )}
+        {/*  {(sectionActualId === "sobreMi" ||
+          sectionActualId === "home" ||
+          sectionActualId === "tecnologias") &&
+          vertical &&
+          splineLoading && (
+            <div className="container--loader2">
+              <div className="loader2"></div>
+            </div>
+          )} */}
+
         {!vertical && (
           <div className="splineContainer">
-            <Spline scene="https://prod.spline.design/Wapp5vLV15kWJDfr/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/Dv5XC-zz0YXFi9t7/scene.splinecode" />
           </div>
         )}
 

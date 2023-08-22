@@ -42,7 +42,7 @@ export default function Proyectos() {
             </div>
             <div className="container_btn--proyectos">
               <a
-                href="https:menuvirtual.vercel.app"
+                href="https://menuvirtual.vercel.app"
                 target="_blank"
                 rel="noreferrer"
               >
