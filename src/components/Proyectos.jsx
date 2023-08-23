@@ -32,12 +32,12 @@ export default function Proyectos() {
               </h2>
               <p data-section="proyectos" data-value="info-proyecto2">
                 Es una aplicación web FullStack hecha con React y NodeJS que
-                está destinada a restaurantes. Cuenta con un apartado para los
-                clientes y otro para administradores. Le permite a los clientes
-                presenciales del restaurante poder hacer pedidos desde la mesa
-                usando la aplicación. Los administradores, pueden editar el Menú
-                y administrar los pedidos hechos por los clientes, entre otras
-                funcionalidades.
+                está destinada a restaurantes. Cuenta con dos apartados, uno
+                para clientes y otro para administradores. Le permite a los
+                clientes presenciales del restaurante poder hacer pedidos desde
+                la mesa usando la aplicación. Los administradores, pueden editar
+                el Menú y administrar los pedidos hechos por los clientes, entre
+                otras funcionalidades.
               </p>
             </div>
             <div className="container_btn--proyectos">
