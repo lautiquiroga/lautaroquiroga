@@ -160,7 +160,7 @@ $descrLineHeight: 1.6;
     font-size: $tituloSizeResp;
     letter-spacing: 0.1vw;
     margin-bottom: 15%;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .cards_container--proyectos {
@@ -215,7 +215,7 @@ $descrLineHeight: 1.6;
         align-items: flex-start;
         justify-content: space-between;
         width: 100%;
-        height: 115vw;
+        height: 105vw;
         .cardTexto {
           display: flex;
           flex-direction: column;

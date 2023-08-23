@@ -38,15 +38,15 @@ export default function Inicio({
             <p>
               Soy programador web especializado en FrontEnd, con conocimientos
               de BackEnd y más de un año de experiencia en el desarrollo de
-              páginas web. Mi enfoque se centra en tecnologías como HTML5, CSS3,
-              SCSS, JavaScript y React. Estoy dispuesto a aprender las
-              tecnologías necesarias.
-            </p>
+              páginas web.
+            </p>{" "}
             {!vertical && (
               <p>
-                Siempre me interesó el diseño y la lógica. Soy detallista y me
-                gusta dedicarle el tiempo que sea necesario a resolver cualquier
-                problema que se presente en el código.
+                Mi enfoque se centra en tecnologías como HTML5, CSS3, SCSS,
+                JavaScript y React. Estoy dispuesto a aprender las tecnologías
+                necesarias. Siempre me interesó el diseño y la lógica. Soy
+                detallista y me gusta dedicarle el tiempo que sea necesario a
+                resolver cualquier problema que se presente en el código.
               </p>
             )}
           </div>
