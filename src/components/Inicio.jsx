@@ -12,24 +12,11 @@ import wordpress from "../multimedia/wordpress.png";
 import iconoWpp from "../multimedia/icon-wpp.png";
 import iconoLd from "../multimedia/icon-linkedin.png";
 
-export default function Inicio({
-  sectionActualId,
-  // splineLoading,
-  // setSplineLoading,
-}) {
+export default function Inicio({ sectionActualId }) {
   const vertical = window.innerHeight > window.innerWidth;
-  // console.log(sectionActualId);
-
-  /*  useEffect(() => {
-    // Simulación de carga de Spline (esto es solo un ejemplo)
-    setTimeout(() => {
-      setSplineLoading(false);
-    }, 5000);
-  }, [splineLoading]); */
 
   return (
     <div className={vertical ? "inicioMobile" : "inicioPC"}>
-      {/* Inicio */}
       <section id="home" className="inicio">
         <div className="textoInicio">
           <p className="hola">Hola! Soy</p>
