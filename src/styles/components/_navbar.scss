@@ -1,6 +1,6 @@
 .navContainer {
   width: 100%;
-  background-color: rgb(13, 13, 13);
+  background-color: rgba(13, 13, 13, 0);
 
   position: fixed;
   z-index: 9999;
@@ -54,6 +54,7 @@
 // Celulares horizontal y tablets
 @media only screen and (min-width: 700px) and (max-width: 991px) {
   .navContainer {
+    background-color: rgb(13, 13, 13);
     padding: 0.5% 0;
     .navbar {
       .containNav {
@@ -100,6 +101,7 @@
 // Celulares vertical
 @media only screen and (max-width: 700px) {
   .navContainer {
+    background-color: rgb(13, 13, 13);
     .navbar {
       .containNav {
         display: flex;
