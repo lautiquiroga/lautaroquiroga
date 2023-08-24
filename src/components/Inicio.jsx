@@ -27,7 +27,7 @@ export default function Inicio({ sectionActualId }) {
               de BackEnd y más de un año de experiencia en el desarrollo de
               páginas web.
             </p>{" "}
-            {!vertical && (
+            {/* {!vertical && (
               <p>
                 Mi enfoque se centra en tecnologías como HTML5, CSS3, SCSS,
                 JavaScript y React. Estoy dispuesto a aprender las tecnologías
@@ -35,7 +35,7 @@ export default function Inicio({ sectionActualId }) {
                 detallista y me gusta dedicarle el tiempo que sea necesario a
                 resolver cualquier problema que se presente en el código.
               </p>
-            )}
+            )} */}
           </div>
           <div className="btnsInicio">
             <a className="button-inicio" href="#proyectos">
@@ -90,20 +90,25 @@ export default function Inicio({ sectionActualId }) {
         <div className="textSobremi">
           <h1 className="titulo-sobremi">Sobre mí</h1>
           <div className="descr-sobremi">
-            Cuento con más de un año de experiencia en el desarrollo de páginas
-            web. Mis habilidades en FrontEnd abarcan HTML5, CSS3, SCSS,
-            JavaScript y React para el desarrollo de interfaces interactivas.
-            También tengo conocimientos de maquetación web con WordPress.
+            Tengo 21 años y vivo en Córdoba, Argentina. Mi enfoque se centra en
+            tecnologías como HTML5, CSS3, SCSS, JavaScript y React. Estoy
+            dispuesto a aprender las tecnologías necesarias. También tengo
+            conocimientos de maquetación web con WordPress.
+            <br />
+            <br />
+            Siempre me interesó el diseño y la lógica, soy detallista y me gusta
+            dedicarle el tiempo que sea necesario a resolver cualquier problema
+            que se presente en el código.
+            <br />
             {/* También cuento con conocimientos en el lado del Backend, utilizando
             PostgreSQL con Sequelize como base de datos y Express para Node.js. */}
-            <br />
-            <br />
             Invierto compromiso y esfuerzo en cada proyecto que abordo, siendo
-            el "Menú Virtual" la aplicación web más extensa que he construido y
-            de la cual he aprendido mucho. Dicho proyecto se caracteriza por un
-            análisis detallado de las diversas funcionalidades, cuidando cada
-            aspecto. También he dedicado tiempo a realizar pruebas minuciosas
-            para garantizar una experiencia de usuario libre de errores.
+            el "<span className="menuVirtual">Menú Virtual</span>" la aplicación
+            web más extensa que construí y de la cual he aprendido mucho. Dicho
+            proyecto se caracteriza por un análisis detallado de las diversas
+            funcionalidades, cuidando cada aspecto. También he dedicado tiempo a
+            realizar pruebas minuciosas para garantizar una experiencia libre de
+            errores.
             {(sectionActualId === "sobreMi" ||
               sectionActualId === "home" ||
               sectionActualId === "tecnologias") &&
@@ -114,7 +119,7 @@ export default function Inicio({ sectionActualId }) {
                   </div>
                 </div>
               )}
-            <div className="subDescr">
+            <div>
               Poseo la habilidad de plasmar el diseño creado por diseñadores
               UX/UI en código funcional y estético. Adquirí esta habilidad
               trabajando en un emprendemiento de desarrollo de páginas web,

@@ -31,7 +31,7 @@ html::-webkit-scrollbar-thumb {
     -ms-border-radius: 0 0 4vw 4vw;
     -o-border-radius: 0 0 4vw 4vw;
     .textoInicio {
-      width: 51vw;
+      width: 52vw;
       padding: 0 0 7% 5%;
       .hola {
         font-size: $tituloSize;
@@ -45,8 +45,8 @@ html::-webkit-scrollbar-thumb {
         color: rgb(44, 131, 189);
       }
       .descr-inicio {
-        padding: 1.5% 0 4% 0;
-        font-size: $descrSize;
+        margin: 5% 0;
+        font-size: 1.4vw;
         font-weight: 400;
         line-height: $descrLineHeight;
         p {
@@ -63,11 +63,11 @@ html::-webkit-scrollbar-thumb {
         font-weight: 500;
         font-size: $descrSize;
         padding: 0.8vw 2vw;
-        border-radius: 1vw;
-        -webkit-border-radius: 1vw;
-        -moz-border-radius: 1vw;
-        -ms-border-radius: 1vw;
-        -o-border-radius: 1vw;
+        border-radius: 0.8vw;
+        -webkit-border-radius: 0.8vw;
+        -moz-border-radius: 0.8vw;
+        -ms-border-radius: 0.8vw;
+        -o-border-radius: 0.8vw;
         &.cv {
           margin-left: 2vw;
         }
@@ -116,7 +116,6 @@ html::-webkit-scrollbar-thumb {
     .contenedorSpline {
       position: relative;
       // border: 1px solid red;
-      height: 50vw;
       width: 50vw;
       @include center;
       .splineContainer {
@@ -126,6 +125,7 @@ html::-webkit-scrollbar-thumb {
       }
     }
     .textSobremi {
+      // border: 1px solid red;
       width: 50vw;
       @include centerCol;
       align-items: flex-start;
@@ -136,6 +136,10 @@ html::-webkit-scrollbar-thumb {
         margin-bottom: 5%;
         font-size: $tituloSize;
         line-height: 1;
+      }
+      .menuVirtual {
+        color: #fbb03b;
+        font-weight: 700;
       }
       .descr-sobremi {
         font-size: $descrSize;
@@ -252,22 +256,21 @@ html::-webkit-scrollbar-thumb {
     -ms-border-radius: 0 0 8vw 8vw;
     -o-border-radius: 0 0 8vw 8vw;
     .textoInicio {
-      padding: 8%;
-      padding-bottom: 0;
+      padding: 7% 7% 0 7%;
       .hola {
-        font-size: 8vw;
+        font-size: 6vw;
         line-height: 1.2;
         margin-bottom: 0;
       }
       .titulo-inicio {
         margin-bottom: 2vh;
-        font-size: 18vw;
+        font-size: 16vw;
         line-height: 0.9;
         color: rgb(44, 131, 189);
-        letter-spacing: 0.6vw;
+        letter-spacing: 0.7vw;
       }
       .descr-inicio {
-        font-size: $descrSizeResp;
+        font-size: 4.4vw;
         font-weight: 400;
         line-height: $descrLineHeight;
         p {
@@ -330,13 +333,17 @@ html::-webkit-scrollbar-thumb {
     .textSobremi {
       @include centerCol;
       // align-items: flex-start;
-      padding: 12% 8%;
+      padding: 12% 7%;
 
       .titulo-sobremi {
         color: white;
         margin-bottom: 8%;
         font-size: $tituloSizeResp;
         line-height: 1;
+      }
+      .menuVirtual {
+        color: #fbb03b;
+        font-weight: 700;
       }
       .descr-sobremi {
         font-size: $descrSizeResp;
@@ -355,10 +362,6 @@ html::-webkit-scrollbar-thumb {
             bottom: 0vw;
           }
         }
-        // .subDescr {
-        //   margin-top: 50vw;
-        //   // border: 1px solid red;
-        // }
       }
     }
   }
@@ -366,7 +369,7 @@ html::-webkit-scrollbar-thumb {
   .tecnologias {
     background-color: rgb(13, 13, 13);
     height: auto;
-    padding: 12% 8%;
+    padding: 12% 7%;
     @include centerCol;
     box-shadow: 0px 0px 0.8rem 0px rgb(12, 30, 43);
     border-radius: 8vw;

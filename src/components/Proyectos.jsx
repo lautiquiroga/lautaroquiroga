@@ -31,13 +31,14 @@ export default function Proyectos() {
                 <b>QuickBites - Menú Virtual</b>
               </h2>
               <p data-section="proyectos" data-value="info-proyecto2">
-                Es una aplicación web FullStack hecha con React y NodeJS que
-                está destinada a restaurantes. Cuenta con dos apartados, uno
-                para clientes y otro para administradores. Le permite a los
-                clientes presenciales del restaurante poder hacer pedidos desde
-                la mesa usando la aplicación. Los administradores, pueden editar
-                el Menú y administrar los pedidos hechos por los clientes, entre
-                otras funcionalidades.
+                Es una <span className="naranja">aplicación web</span> FullStack
+                hecha con React y NodeJS que está destinada a restaurantes.
+                Cuenta con dos apartados, uno para clientes y otro para
+                administradores. Le permite a los clientes presenciales del
+                restaurante poder hacer pedidos desde la mesa usando la
+                aplicación. Los administradores, pueden editar el Menú y
+                administrar los pedidos hechos por los clientes, entre otras
+                funcionalidades.
               </p>
             </div>
             <div className="container_btn--proyectos">
@@ -56,21 +57,24 @@ export default function Proyectos() {
         </div>
 
         <div className="cards--proyectos card_portafolio">
-          <div className="container_imgCard--proyectos">
-            <img src={gopage} alt="Proyecto: carrito" />
-          </div>
+          <a href="https://gopage.vercel.app/" target="_blank" rel="noreferrer">
+            <div className="container_imgCard--proyectos">
+              <img src={gopage} alt="Proyecto: carrito" />
+            </div>
+          </a>
           <div className="container_textCard--proyectos">
             <div className="cardTexto">
               <h2 data-section="proyectos" data-value="title-proyecto2">
                 <b>Portafolio GoPage</b>
               </h2>
               <p data-section="proyectos" data-value="info-proyecto2">
-                El proyecto es una LandingPage destinada a una empresa de
-                desarrollo web. Está realizada con React y SCSS. El enfoque en
-                la experiencia del usuario se combina con un código limpio y
-                bien estructurado, lo que garantiza un diseño atractivo y un
-                funcionamiento sin problemas. Resalto este proyecto para
-                evidenciar mi habilidad de convertir el diseño UX/UI en código.
+                El proyecto es una <span className="naranja">LandingPage</span>{" "}
+                destinada a una empresa de desarrollo web. Está realizada con
+                React y SCSS. El enfoque en la interfaz del usuario se combina
+                con un código limpio y bien estructurado, lo que garantiza un
+                diseño atractivo y un funcionamiento sin problemas. Resalto este
+                proyecto para evidenciar mi habilidad de convertir el diseño
+                UX/UI en código.
               </p>
             </div>
             <div className="container_btn--proyectos">
@@ -156,11 +160,12 @@ export default function Proyectos() {
                 <b>Urbano Clothes - WooCommerce</b>
               </h2>
               <p data-section="proyectos" data-value="info-proyecto1">
-                Este proyecto se materializó utilizando WordPress como base,
-                donde saqué partido de herramientas clave: el plugin Elementor y
-                el tema Astra. El resultado es un sitio web informativo que
-                incluye datos de contacto esenciales, y además incorpora una
-                funcionalidad de tienda en línea.
+                Este proyecto es un <span className="naranja">E-Commerce</span>{" "}
+                materializado con WordPress como base, donde saqué partido de
+                herramientas clave: el plugin Elementor y el tema Astra. <br />{" "}
+                El resultado es un sitio web informativo que incluye datos de
+                contacto esenciales, y además incorpora una funcionalidad de
+                tienda en línea.
               </p>
             </div>
             {/*  <div className="container_btn--proyectos">

@@ -95,6 +95,10 @@ $descrLineHeight: 1.6;
             margin-top: 1vw;
             margin-bottom: 0;
           }
+          .naranja {
+            color: #fbb03b;
+            font-weight: 700;
+          }
         }
 
         .container_btn--proyectos {
@@ -110,11 +114,11 @@ $descrLineHeight: 1.6;
               font-weight: 700;
               font-size: 1vw;
               padding: 0.5vw 2vw;
-              border-radius: 1vw;
-              -webkit-border-radius: 1vw;
-              -moz-border-radius: 1vw;
-              -ms-border-radius: 1vw;
-              -o-border-radius: 1vw;
+              border-radius: 0.8vw;
+              -webkit-border-radius: 0.8vw;
+              -moz-border-radius: 0.8vw;
+              -ms-border-radius: 0.8vw;
+              -o-border-radius: 0.8vw;
               background-color: rgb(44, 131, 189);
               color: $eerie-black;
               border: none;
@@ -151,7 +155,7 @@ $descrLineHeight: 1.6;
 .proyectosMobile {
   width: 100%;
   height: auto;
-  padding: 12% 8%;
+  padding: 12% 7%;
   background-color: transparent;
   h1 {
     display: block;
@@ -215,7 +219,7 @@ $descrLineHeight: 1.6;
         align-items: flex-start;
         justify-content: space-between;
         width: 100%;
-        height: 105vw;
+        height: auto;
         .cardTexto {
           display: flex;
           flex-direction: column;
@@ -235,6 +239,10 @@ $descrLineHeight: 1.6;
             margin-top: 1vw;
             margin-bottom: 0;
           }
+          .naranja {
+            color: #fbb03b;
+            font-weight: 700;
+          }
         }
 
         .container_btn--proyectos {
@@ -243,6 +251,7 @@ $descrLineHeight: 1.6;
           width: 100%;
           a {
             text-decoration: none;
+            padding-top: 5%;
             button {
               @include center;
               border-radius: 2vw;
