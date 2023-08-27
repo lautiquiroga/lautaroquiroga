@@ -119,6 +119,12 @@ export default function Inicio({ sectionActualId }) {
                   </div>
                 </div>
               )}
+            {!vertical && (
+              <>
+                <br />
+                <br />
+              </>
+            )}
             <div>
               Poseo la habilidad de plasmar el diseño creado por diseñadores
               UX/UI en código funcional y estético. Adquirí esta habilidad

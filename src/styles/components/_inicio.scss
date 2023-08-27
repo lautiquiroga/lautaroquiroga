@@ -239,7 +239,6 @@ html::-webkit-scrollbar-thumb {
 
   .inicio {
     height: auto;
-    padding-top: 3vw;
     background-color: rgb(13, 13, 13);
     background-image: url("../../multimedia/fondo1.png");
     background-size: cover;
@@ -256,7 +255,7 @@ html::-webkit-scrollbar-thumb {
     -ms-border-radius: 0 0 8vw 8vw;
     -o-border-radius: 0 0 8vw 8vw;
     .textoInicio {
-      padding: 7% 7% 0 7%;
+      padding: 6vh 7% 0 7%;
       .hola {
         font-size: 6vw;
         line-height: 1.2;

@@ -9,9 +9,6 @@ import Contacto from "./Contacto";
 export default function Home() {
   const vertical = window.innerHeight > window.innerWidth;
   const [sectionActualId, setSectionActualId] = useState("home");
-  // const [splineLoading, setSplineLoading] = useState(true);
-  // const [splineLoaded, setSplineLoaded] = useState(false);
-  console.log(sectionActualId);
 
   useEffect(() => {
     // Función que se ejecutará cuando cambie el tamaño del viewport
