@@ -1,10 +1,16 @@
-import React /* , { useEffect } */ from "react";
+import React, { useState, useEffect } from "react";
 // import logo from "../multimedia/logo2.PNG";
 
 export default function Navbar() {
+  const [headerOpen, setHeaderOpen] = useState(false);
+
   return (
     <>
-      <div className="navContainer header">
+      <div
+        className={`navContainer header ${
+          headerOpen && window.scrollY === 0 ? "headerBlack" : undefined
+        }`}
+      >
         <nav className="navbar navbar-expand-lg ">
           <div className="container-fluid containNav">
             <button
@@ -15,10 +21,17 @@ export default function Navbar() {
               aria-controls="navbarNavAltMarkup"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={() => setHeaderOpen((prevHeaderOpen) => !prevHeaderOpen)}
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarNavAltMarkup"
+              style={{
+                transitionDuration: "0.15s", // Ajusta la velocidad aquí
+              }}
+            >
               <nav className="nav_menu not-active navbar-nav">
                 <a href="#home" className="nav-link active">
                   Inicio
