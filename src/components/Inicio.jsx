@@ -23,9 +23,9 @@ export default function Inicio({ sectionActualId }) {
           <h1 className="titulo-inicio">Lautaro Quiroga</h1>
           <div className="descr-inicio">
             <p>
-              Soy programador web especializado en FrontEnd, con conocimientos
-              de BackEnd y más de un año de experiencia en el desarrollo de
-              páginas web.
+              Soy desarrollador web especializado en FrontEnd, con conocimientos
+              de BackEnd. Tengo experiencia laboral con WordPress y
+              programación.
             </p>{" "}
             {/* {!vertical && (
               <p>
@@ -43,7 +43,7 @@ export default function Inicio({ sectionActualId }) {
             </a>
             <a
               className="button-inicio cv"
-              href="https://drive.google.com/file/d/1s4_WQpagqBGyLTk0qofJtnNSA-kGeHog/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1AnYT23aBC5NFxyFN2S0HtFEYwvPgyvNS/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >
@@ -90,21 +90,25 @@ export default function Inicio({ sectionActualId }) {
         <div className="textSobremi">
           <h1 className="titulo-sobremi">Sobre mí</h1>
           <div className="descr-sobremi">
-            Tengo 21 años y vivo en Córdoba, Argentina. Mi enfoque se centra en
-            tecnologías como HTML5, CSS3, SCSS, JavaScript y React. Estoy
-            dispuesto a aprender las tecnologías necesarias. También tengo
-            conocimientos de maquetación web con WordPress.
+            Tengo 22 años y vivo en Córdoba, Argentina. Actualmente, trabajo con
+            Elementor y WordPress para la creación de sitios web
+            institucionales, Landing Pages y E-Commerces. Además, tengo
+            experiencia trabajando con HTML5, CSS3, SCSS, JavaScript, React y
+            Bootstrap para el FrontEnd con código.
             <br />
             <br />
             Siempre me interesó el diseño y la lógica, soy detallista y me gusta
             dedicarle el tiempo que sea necesario a resolver cualquier problema
-            que se presente en el código.
+            que se presente en el desarrollo de sitios web.
             <br />
             {/* También cuento con conocimientos en el lado del Backend, utilizando
             PostgreSQL con Sequelize como base de datos y Express para Node.js. */}
-            Invierto compromiso y esfuerzo en cada proyecto que abordo, siendo
-            el "<span className="menuVirtual">Menú Virtual</span>" la aplicación
-            web más extensa que construí y de la cual he aprendido mucho. Dicho
+            Invierto compromiso y esfuerzo en cada proyecto que abordo. He
+            desarrollado más de 20 sitios web con Elementor, actualmente
+            publicados y en funcionamiento real. Tengo experiencia en el
+            desarollo de aplicaciones web con código, siendo el "
+            <span className="menuVirtual">Menú Virtual</span>" la aplicación web
+            más extensa que construí y de la cual he aprendido mucho. Dicho
             proyecto se caracteriza por un análisis detallado de las diversas
             funcionalidades, cuidando cada aspecto. También he dedicado tiempo a
             realizar pruebas minuciosas para garantizar una experiencia libre de
@@ -126,13 +130,11 @@ export default function Inicio({ sectionActualId }) {
               </>
             )}
             <div>
-              Poseo la habilidad de plasmar el diseño creado por diseñadores
-              UX/UI en código funcional y estético. Adquirí esta habilidad
-              trabajando en un emprendemiento de desarrollo de páginas web,
-              colaborando con otro programador (utilizamos Git para trabajo
-              colaborativo y control de versiones), y dos diseñadores. Esta
-              experiencia me ha proporcionado habilidades sólidas de trabajo en
-              equipo, comunicación y liderazgo.
+              Algunas de las habilidades en las que me destaco, incluyen la
+              capacidad para trabajar en equipo, resolver problemas de manera
+              eficiente, mantener un enfoque en el aprendizaje constante, ser
+              proactivo al proponer soluciones innovadoras y ser perfeccionista
+              en la creación de sitios web a partir de los diseños UX/UI.
             </div>
           </div>
         </div>
