@@ -8,7 +8,7 @@ export default function Navbar() {
     <>
       <div
         className={`navContainer header ${
-          headerOpen && window.scrollY === 0 ? "headerBlack" : undefined
+          headerOpen ? "headerBlack" : undefined
         }`}
       >
         <nav className="navbar navbar-expand-lg ">
