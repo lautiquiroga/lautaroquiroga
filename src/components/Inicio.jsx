@@ -11,6 +11,7 @@ import git from "../multimedia/icon-git.png";
 import wordpress from "../multimedia/wordpress.png";
 import iconoWpp from "../multimedia/icon-wpp.png";
 import iconoLd from "../multimedia/icon-linkedin.png";
+import elementor from "../multimedia/Elementor.png";
 
 export default function Inicio({ sectionActualId }) {
   const vertical = window.innerHeight > window.innerWidth;
@@ -24,8 +25,8 @@ export default function Inicio({ sectionActualId }) {
           <div className="descr-inicio">
             <p>
               Soy desarrollador web especializado en FrontEnd, con conocimientos
-              de BackEnd. Tengo experiencia laboral con WordPress y
-              programación.
+              de BackEnd. Poseo experiencia profesional en el uso de WordPress y
+              en desarrollo de software.
             </p>{" "}
             {/* {!vertical && (
               <p>
@@ -90,11 +91,11 @@ export default function Inicio({ sectionActualId }) {
         <div className="textSobremi">
           <h1 className="titulo-sobremi">Sobre mí</h1>
           <div className="descr-sobremi">
-            Tengo 22 años y vivo en Córdoba, Argentina. Actualmente, trabajo con
-            Elementor y WordPress para la creación de sitios web
-            institucionales, Landing Pages y E-Commerces. Además, tengo
-            experiencia trabajando con HTML5, CSS3, SCSS, JavaScript, React y
-            Bootstrap para el FrontEnd con código.
+            Tengo 22 años y vivo en Córdoba, Argentina. Actualmente, trabajo en
+            una agencia de desarrollo web utilizando Elementor y WordPress para
+            la creación de sitios web institucionales, Landing Pages y
+            E-Commerces. Además, tengo experiencia trabajando con HTML5, CSS3,
+            SCSS, JavaScript, React y Bootstrap para el FrontEnd con código.
             <br />
             <br />
             Siempre me interesó el diseño y la lógica, soy detallista y me gusta
@@ -195,6 +196,13 @@ export default function Inicio({ sectionActualId }) {
             />
             <div className="">
               <p>WordPress</p>
+            </div>
+          </div>
+
+          <div className="cardTecno">
+            <img className="logoTecno" src={elementor} alt="Logo - Elementor" />
+            <div className="">
+              <p>Elementor</p>
             </div>
           </div>
         </div>
