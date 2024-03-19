@@ -84,7 +84,7 @@ export default function Inicio({ sectionActualId }) {
         {!vertical && (
           <div className="contenedorSpline">
             <div className="splineContainer">
-              <Spline scene="https://prod.spline.design/b0SyaHAcBRlWKnio/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/hNxISoMVUaCqASeW/scene.splinecode" />
             </div>
           </div>
         )}
